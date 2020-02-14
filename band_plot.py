@@ -10,6 +10,10 @@ import matplotlib.gridspec as gs
 import sys
 import pylab
 
+mpl.rcParams['font.family'] = 'serif'
+mpl.rcParams['mathtext.fontset'] = 'dejavuserif'
+
+
 #This function extracts the high symmetry points from the output of bandx.out
 def Symmetries(fstring): 
   f = open(fstring,'r')
